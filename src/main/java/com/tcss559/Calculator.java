@@ -8,7 +8,7 @@ import jakarta.jws.WebResult;
 
 @WebService(targetNamespace = "http://calc-soap/ws")
 @SOAPBinding(
-		  style = SOAPBinding.Style.RPC,
+		  style = SOAPBinding.Style.DOCUMENT,
 		  use = SOAPBinding.Use.LITERAL,
 		  parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
 public interface Calculator {
