@@ -6,6 +6,7 @@ import jakarta.xml.ws.Service;
 // comment
 
 
+
 public class soapClient {
     public static void main(String[] args) throws Exception {
     	 // create wsdl url
