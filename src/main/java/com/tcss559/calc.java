@@ -13,7 +13,7 @@ import javax.xml.ws.Endpoint;
 		endpointInterface = "com.tcss559.calcService", 
 		targetNamespace = "http://calc-soap/ws" */)
 @SOAPBinding(
-		  style = SOAPBinding.Style.RPC,
+		  style = SOAPBinding.Style.DOCUMENT,
 		  use = SOAPBinding.Use.LITERAL,
 		  parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
 public class calc  {
