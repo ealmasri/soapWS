@@ -8,12 +8,12 @@ import javax.jws.WebResult;
 import javax.xml.ws.Endpoint;
 
 @WebService(
-		/*portName = "CalcSoapPort",
+		portName = "CalcSoapPort",
 		serviceName = "CalcSoapService", 
-		endpointInterface = "com.tcss559.calcService", 
-		targetNamespace = "http://calc-soap/ws" */)
+		endpointInterface = "com.tcss559.calcSoapService", 
+		targetNamespace = "http://calc-soap/ws" )
 @SOAPBinding(
-		  style = SOAPBinding.Style.RPC,
+		  style = SOAPBinding.Style.DOCUMENT,
 		  use = SOAPBinding.Use.LITERAL,
 		  parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
 public class calcWebService  {
@@ -42,8 +42,8 @@ public class calcWebService  {
         return a / b;
     }
     
-    public static void main(String[] args ){
+    /*public static void main(String[] args ){
         Endpoint.publish("http://0.0.0.0/calcService", new calcWebService());
-    }
+    }*/
  
 }
